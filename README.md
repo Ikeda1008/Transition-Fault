@@ -8,9 +8,10 @@
   
 ## コードの説明
 - 8値論理シミュレーションを実装。以下の3つのビット配列。
--vals_bp[0] = Final（V2サイクルでの最終状態）
--vals_bp[1] = Initial（V1サイクルでの初期状態）
--vals_bp[2] = Activity（V1からV2へ遷移したかどうかのフラグ
+- 
+vals_bp[0] = Final（V2サイクルでの最終状態）
+vals_bp[1] = Initial（V1サイクルでの初期状態）
+vals_bp[2] = Activity（V1からV2へ遷移したかどうかのフラグ
 - inject_cb（コールバック）を使って Activity ビットと Initial/Final ビットの論理積を取ることで、Rise/Fallを特定した。
 ## 開発環境
 - Python 3
